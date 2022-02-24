@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    height: 800px;
+    /* max-width: 800px; */
+}
+
+.wrapper
+{
+    padding: 5px;
+    max-width: 5000px;
+    background-color: white;
+    margin-left: 45px;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.header
+{
+    display: flex;
+}
+
+#menu
+{
+    flex: 2;
+}
+
+#taskManager
+{
+    flex: 3;
+}
+
+#notificationIcon
+{
+    flex: 1;
+}
+
+.text-wrapper
+{
+    flex: 1;
+}
+
+.search-wrapper
+{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#bold-text
+{
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    flex: 1;
+}
+
+#search-icon
+{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 6790px;
+}
+
+.schedule-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    padding: 5px 25px;
+}
+
+.schedule
+{
+
+}
+
+#today
+{
+    background-color: black;
+    border-radius: 67px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.next-box{
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+}
+
+.text-class{
+    border-radius: 1000px;
+    padding: 5px;
+    outline-color: rgb(243, 236, 236);
+    outline-style: solid; 
+    margin-left: 10px;
+    font-weight: bolder;
+}
+.events-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.event-box{
+    display: flex;
+    background-color: rgb(255, 127, 255);
+    border-radius: 15px;
+    height: 200px;
+    margin-top: 15px;
+    border: 2px solid rgb(196, 24, 24);
+    max-width: 350px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.edit-icon{
+  padding-left: 50px;
+}
+
+#text2 b{
+    padding: 3px 28px;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.event-box2
+{
+    border: 2px solid red;
+    background-color: rgb(75, 50, 114);
+    margin-top: 20px;
+    border-radius: 15px;
+    height: 100px;
+}
+
+.calender-wrappper{
+    display: flex;
+    margin-top: 15px;
+      padding: 15px 25px;
+}
+
+.date
+{
+    margin-left: 10px;
+}
+
+.clock-wrapper{
+    display: flex;
+    padding: 3px 25px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timer{
+    margin-left: 10px;
+}
+
+
+.circle{
+    color: black;
+    border-radius: 9000px;
+    border: 2px solid black;
+    margin-left: 130px;
+    padding: 10px;
+   
+}
+
+.task{
+    padding: 25px;
+    color: white;
+    background-color: black;
+    margin-top: 15px;
+    margin-left: 60px;
+    border-radius: 30px;
+    justify-content: center;
+}
