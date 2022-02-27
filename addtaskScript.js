@@ -1,6 +1,15 @@
 const taskBox = document.querySelector(".event-box");
-let todoArray = JSON.parse(localStorage.getItem('taskInfo'));
+// let todoArray = JSON.parse(localStorage.getItem('taskInfo'));
  
+// To check if the local storage has any value or not, if you did it the way it is aove and the local storage is empty it'll send null as value
+var todoArray = []
+if ( JSON.parse(localStorage.getItem('taskInfo')) 
+){
+  todoArray = JSON.parse(localStorage.getItem('taskInfo')); // if not empty set it
+}
+else{
+  todoArray=[] // if empty set it to be an empty array
+}
 
 const assign = () => {
   console.log("assigning");
@@ -25,7 +34,10 @@ const assign = () => {
     todoArray.push(tasks);
     localStorage.setItem("taskInfo", JSON.stringify(todoArray));
     location.href = "/index.html";
-  });
+  }
+  
+  
+  );
 
 }
 
@@ -41,8 +53,9 @@ const displayTask = () => {
   list.append += new_buddy
 }
 
-document.querySelector('.save_btn').addEventListener('click', displayTask)
-
-
 assign();
+
+var sav = document.querySelector('.save_btn');
+sav.addEventListener("click", ()=> displayTask())
+
 
